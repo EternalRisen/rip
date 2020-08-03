@@ -10,14 +10,16 @@ fn weep(rng: &mut ThreadRng) {
 fn funeral(person: &str) {
     let mut rng = thread_rng();
     let cause_of_death = [
-        "car accident",
-        "nuclear bomb that North Korea set off",
-        "fatal computer explosion",
-        " ... wait, how did they die? oh well...",
+        "in that car accident",
+        "in that nuclear bomb that North Korea set off",
+        "in that fatal computer explosion",
+        "from ... wait, how did they die? oh well...",
+        "from COVID",
+        "in a fire"
     ];
 
     println!("{} was a good person", person);
-    println!("Why did they have to die in that {}", cause_of_death.choose(&mut rng).unwrap());
+    println!("Why did they have to die {}", cause_of_death.choose(&mut rng).unwrap());
     println!("RIP {}", person);
     weep(&mut rng);
 }
