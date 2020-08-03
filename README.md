@@ -20,7 +20,7 @@ $ cargo build (or cargo run)
 
 ## Usage:
 `rip <string_here>`
-================
+
 
 have fun
 
