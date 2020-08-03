@@ -15,8 +15,12 @@ $ git clone https://github.com/YaBoiJD/rip
 
 $ cd rip
 
-$ cargo build
+$ cargo build (or cargo run)
 ```
+
+## Usage:
+`rip <string_here>`
+================
 
 have fun
 
