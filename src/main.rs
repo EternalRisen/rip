@@ -15,7 +15,8 @@ fn funeral(person: &str) {
         "in that fatal computer explosion",
         "from ... wait, how did they die? oh well...",
         "from COVID",
-        "in a fire"
+        "in a fire",
+        "while petting a kitty"
     ];
 
     println!("{} was a good person", person);
