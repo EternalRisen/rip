@@ -8,7 +8,11 @@ soooo uhhh
 
 to build this....
 
-just make sure you have cargo and run `cargo build` and yeah....
+just make sure you have cargo(what is used with [rust](https://www.rust-lang.org/))
+``bash
+$ git clone https://github.com/YaBoiJD/rip
+$ cd rip
+$ cargo build``
 
 have fun
 
