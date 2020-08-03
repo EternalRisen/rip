@@ -18,6 +18,8 @@ $ cd rip
 $ cargo build (or cargo run)
 ```
 
+and ofc move this where apropriate so it *actually* works
+
 ## Usage:
 `rip <string_here>`
 
