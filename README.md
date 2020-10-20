@@ -2,20 +2,18 @@
 
 Honestly...
 
-I'm just bored as fuck so I made this (with the help of [dorumin](https://github.com/dorumin))
+I'm just bored as fuck so I made this
 
 soooo uhhh
 
 to build this....
 
-just make sure you have cargo(what is used with [rust](https://www.rust-lang.org/))
+just make sure you have cargo(what is used with [rust](https://www.rust-lang.org/)) and [make](https://www.gnu.org/software/make/)
 
 ```bash
-$ git clone https://github.com/YaBoiJD/rip
+$ make
 
-$ cd rip
-
-$ cargo build (or cargo run)
+# make install
 ```
 
 and ofc move this where apropriate(Or whatever the fuck you gotta do to it so it works) so it *actually* works
