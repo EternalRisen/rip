@@ -45,12 +45,25 @@ fn mourn(rng: &mut ThreadRng) {
     println!("Why did they have to die {}", cause.choose(rng).unwrap());
 }
 
+fn respect(person: &str, rng: &mut ThreadRng) {
+    let f = [
+        "RIP",
+        "F",
+        "Press f for",
+        "rest in piss",
+        "no one liked you anyway",
+        "unfortunate,",
+        "take me with you"
+    ];
+    println!("{} {}", f.choose(rng).unwrap(), person);
+}
+
 fn funeral(person: &str) {
     let mut rng = thread_rng();
 
     align(person, &mut rng);
     mourn(&mut rng);
-    println!("RIP {}", person);
+    respect(person, &mut rng);
     weep(&mut rng);
 }
 
