@@ -2,14 +2,38 @@ use std::env;
 use rand::prelude::*;
 
 fn weep(rng: &mut ThreadRng) {
-    let rweep = [";w;", ";", ";;", ";-;", ":(", "T-T"];
-
+    let rweep = [
+        ";w;",
+        ";",
+        ";;",
+        ";-;",
+        ":(",
+        "T-T",
+        ":'‑(",
+        ":'(",
+        ";(",
+        ":{",
+        ":c",
+        "D:",
+        "🦀"
+    ];
     println!("{}", rweep.choose(rng).unwrap());
 }
 
-fn funeral(person: &str) {
-    let mut rng = thread_rng();
-    let cause_of_death = [
+fn align(person: &str, rng: &mut ThreadRng) {
+    let alignment = [
+        "a good person",
+        "honestly not that important",
+        "a pretty bad person",
+        "the literal worst",
+        "the best",
+        "my crush"
+    ];
+    println!("{} was {}", person, alignment.choose(rng).unwrap());
+}
+
+fn mourn(rng: &mut ThreadRng) {
+    let cause = [
         "in that car accident",
         "in that nuclear bomb that North Korea set off",
         "in that fatal computer explosion",
@@ -18,9 +42,14 @@ fn funeral(person: &str) {
         "in a fire",
         "while petting a kitty"
     ];
+    println!("Why did they have to die {}", cause.choose(rng).unwrap());
+}
 
-    println!("{} was a good person", person);
-    println!("Why did they have to die {}", cause_of_death.choose(&mut rng).unwrap());
+fn funeral(person: &str) {
+    let mut rng = thread_rng();
+
+    align(person, &mut rng);
+    mourn(&mut rng);
     println!("RIP {}", person);
     weep(&mut rng);
 }
