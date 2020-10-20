@@ -23,6 +23,12 @@ fn weep(rng: &mut ThreadRng) {
 fn align(person: &str, rng: &mut ThreadRng) {
     let alignment = [
         "a good person",
+        "a bad person",
+        "very caring",
+        "an asshole",
+        "a wonderful person",
+        "ok... i guess...",
+        "tolerable",
         "honestly not that important",
         "a pretty bad person",
         "the literal worst",
