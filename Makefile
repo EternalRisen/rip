@@ -1,9 +1,16 @@
 build:
+	@echo building...
+	@cargo build --release
+
+dev:
+	@echo building...
 	@cargo build
 
 install:
-	cp "target/debug/rip" "/usr/local/bin/rip"
+	@echo installing...
+	@cp "target/release/rip" "/usr/local/bin/rip"
 
 uninstall:
-	rm -f "/usr/local/bin/rip"
+	@echo removing...
+	@rm -f "/usr/local/bin/rip"
 
