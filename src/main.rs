@@ -15,6 +15,7 @@ fn weep(rng: &mut ThreadRng) {
         ":{",
         ":c",
         "D:",
+        ":<",
         "🦀"
     ];
     println!("{}", rweep.choose(rng).unwrap());
@@ -46,7 +47,8 @@ fn mourn(rng: &mut ThreadRng) {
         "from ... wait, how did they die? oh well...",
         "from COVID",
         "in a fire",
-        "while petting a kitty"
+        "while petting a kitty",
+        "from being thrown out a window"
     ];
     println!("Why did they have to die {}", cause.choose(rng).unwrap());
 }
