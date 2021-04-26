@@ -2,7 +2,7 @@
 
 Honestly...
 
-I was just bored as fuck so I made this
+I was just bored so I made this
 
 soooo uhhh
 
@@ -14,13 +14,8 @@ just make sure you have [rust](https://www.rust-lang.org/)
 $ cargo build
 ```
 
-move this where appropriate (Or whatever the fuck you gotta do to it so it works) so it *actually* works
+move this where appropriate (such as /usr/local/bin) so that you can use it in the command line as such:
+`rip Emily`
 
 ## Usage:
-`rip <string_here>`
-
-
-have fun
-
-
-*REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*
+`rip <string_here>` (or if you are in the project directory) `cargo run <string_here>`
